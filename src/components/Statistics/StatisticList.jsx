@@ -1,11 +1,25 @@
 import { Statistics } from "../Statistics/Statistics"
+import { getRandomColor } from "../../getRandomColor"
+import { PropTypes } from "prop-types"
+import css from "../Statistics/Statistics.module.css"
 
 export const StatisticList = ({stats}) => {
-    return <ul>
+    return <section>
+        <div>
+        <ul className={css.list}>
         {stats.map(stat => 
-            <li key={stat.id}>
+            <li key={stat.id} className={css.item} style={{backgroundColor: getRandomColor()}}>
                 <Statistics stats={stat}/>
             </li>
             )}
-    </ul>
+            </ul>
+            </div>
+        </section>
+    
+}
+
+StatisticList.propTypes = {
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({id: PropTypes.string.isRequired,}),
+    ).isRequired
 }

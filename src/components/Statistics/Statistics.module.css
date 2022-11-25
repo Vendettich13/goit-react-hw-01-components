@@ -1,0 +1,31 @@
+.list {
+    max-width: 350px;
+    display: flex;
+    margin: 0 auto;
+
+    box-shadow: 1px 0px 20px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+.label {
+    display: block;
+    margin-bottom: 10px;
+}
+.item {
+    width: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: aliceblue;
+}
+.item:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.item:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.percentage {
+    font-size: 20px;
+}

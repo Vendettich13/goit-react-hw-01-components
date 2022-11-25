@@ -1,0 +1,32 @@
+.item {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+
+    box-shadow: 1px 0px 20px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+.friendList {
+    max-width: 350px;
+    margin: 0 auto;
+}
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.avatar {
+    margin-right: 30px;
+    width: 80px;
+}
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
+.online {
+    color: green;
+}
+.offline {
+    color: red;
+}
+.svg {
+    margin-right: 15px;
+}
