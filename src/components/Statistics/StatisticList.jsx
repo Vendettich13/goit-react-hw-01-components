@@ -1,5 +1,5 @@
 import { Statistics } from "../Statistics/Statistics"
-import { getRandomColor } from "../../getRandomColor"
+import { getRandomColor } from "../../utils/getRandomColor"
 import { PropTypes } from "prop-types"
 import css from "../Statistics/Statistics.module.css"
 
